@@ -189,7 +189,7 @@ export default function Portfolio() {
             Welcome to my portfolio
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">
-            Ashish Gajanan Shirsat
+            Ashish Shirsat
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-up animation-delay-200">
             Frontend Developer | React Specialist | UI/UX Enthusiast
@@ -518,7 +518,7 @@ export default function Portfolio() {
       </section>
 
       <footer className="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-8 text-center">
-        <p className="mb-2">&copy; 2025 Ashish Gajanan Shirsat. All rights reserved.</p>
+        <p className="mb-2">&copy; 2025 Ashish Shirsat. All rights reserved.</p>
         <p className="text-gray-400">Built with passion and dedication using React & Tailwind CSS</p>
       </footer>
 
