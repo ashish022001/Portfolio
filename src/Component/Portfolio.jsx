@@ -249,8 +249,8 @@ export default function Portfolio() {
                 { icon: <Briefcase className="w-6 h-6" />, label: 'Status', value: 'Available' }
               ].map((item, idx) => (
                 <div key={idx} className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border-l-4 border-blue-600">
-                  <div className="text-blue-600 mb-3">{item.icon}</div>
-                  <h4 className="font-semibold text-gray-900 mb-1">{item.label}</h4>
+                  {/* <div className="text-blue-600 mb-3">{item.icon}</div> */}
+                  <h4 className="flex font-semibold gap-2 text-gray-900 mb-1">{item.icon} {item.label}</h4>
                   <p className="text-sm text-gray-600">{item.value}</p>
                 </div>
               ))}
