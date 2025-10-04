@@ -72,7 +72,7 @@ export default function Portfolio() {
       });
 
       const result = await response.json();
-      
+
       if (result.success) {
         setFormStatus('success');
         setFormData({
@@ -81,7 +81,7 @@ export default function Portfolio() {
           subject: '',
           message: ''
         });
-        
+
         setTimeout(() => {
           setFormStatus('');
         }, 5000);
@@ -101,10 +101,10 @@ export default function Portfolio() {
   };
 
   const skills = {
-    frontend: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React JS', 'Next.js', 'TailwindCSS', 'Bootstrap'],
-    backend: ['Node.js', 'Express.js', 'Core Java', 'REST APIs'],
-    database: ['MongoDB', 'PostgreSQL', 'Oracle'],
-    tools: ['Git', 'GitHub', 'VS Code', 'Postman', 'Swagger', 'IntelliJ IDEA', 'Eclipse IDE']
+    frontend: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Bootstrap'],
+    backend: ['Node.js', 'Express.js', 'Core Java', 'RESTful APIs'],
+    database: ['MongoDB', 'PostgreSQL', 'Oracle Database'],
+    tools: ['Git', 'GitHub', 'Visual Studio Code', 'Postman', 'Swagger', 'IntelliJ IDEA', 'Eclipse IDE']
   };
 
   const projects = [
@@ -183,7 +183,7 @@ export default function Portfolio() {
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 opacity-90" />
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJWMzRoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20" />
-        
+
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="inline-block mb-6 px-6 py-2 bg-white/20 backdrop-blur-md rounded-full text-white text-sm font-medium animate-fade-in">
             Welcome to my portfolio
@@ -227,7 +227,7 @@ export default function Portfolio() {
             About Me
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-16 rounded-full" />
-          
+
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -240,8 +240,8 @@ export default function Portfolio() {
                 Currently working at Infimatrix Technology Pvt. Ltd., I contribute to building innovative solutions while collaborating with talented teams in an Agile environment.
               </p>
             </div>
-            
-            <div className="grid grid-cols-2 gap-4">
+
+            <div className="grid grid-cols-1 gap-4">
               {[
                 { icon: <MapPin className="w-6 h-6" />, label: 'Location', value: 'Yavatmal, Maharashtra' },
                 { icon: <Mail className="w-6 h-6" />, label: 'Email', value: 'ashish2722001@gmail.com' },
@@ -265,7 +265,7 @@ export default function Portfolio() {
             Technical Skills
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-16 rounded-full" />
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: 'Frontend', icon: <Layout className="w-8 h-8" />, items: skills.frontend, color: 'from-blue-500 to-cyan-500' },
@@ -297,7 +297,7 @@ export default function Portfolio() {
             Featured Projects
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-16 rounded-full" />
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, idx) => (
               <div key={idx} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
@@ -335,7 +335,7 @@ export default function Portfolio() {
             Work Experience
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-16 rounded-full" />
-          
+
           <div className="relative pl-8 border-l-2 border-blue-200">
             <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-0" />
             <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all">
@@ -375,7 +375,7 @@ export default function Portfolio() {
             Education & Certification
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-16 rounded-full" />
-          
+
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { degree: 'Master of Computer Applications (MCA)', institution: 'Swami Ramanand Teerth Marathwada University, Nanded', year: '2025' },
@@ -401,7 +401,7 @@ export default function Portfolio() {
             Get In Touch
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-16 rounded-full" />
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               {[
@@ -428,57 +428,57 @@ export default function Portfolio() {
                 </div>
               ))}
             </div>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-semibold text-gray-900 mb-2">Name</label>
-                <input 
-                  type="text" 
-                  name="name" 
+                <input
+                  type="text"
+                  name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  required 
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors" 
+                  required
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors"
                   placeholder="Your Name"
                 />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-900 mb-2">Email</label>
-                <input 
-                  type="email" 
-                  name="email" 
+                <input
+                  type="email"
+                  name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  required 
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors" 
+                  required
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors"
                   placeholder="your.email@example.com"
                 />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-900 mb-2">Subject</label>
-                <input 
-                  type="text" 
-                  name="subject" 
+                <input
+                  type="text"
+                  name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  required 
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors" 
+                  required
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors"
                   placeholder="What's this about?"
                 />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-900 mb-2">Message</label>
-                <textarea 
-                  name="message" 
+                <textarea
+                  name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  required 
-                  rows="4" 
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors resize-none" 
+                  required
+                  rows="4"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors resize-none"
                   placeholder="Your message here..."
                 />
               </div>
-              
+
               {formStatus === 'success' && (
                 <div className="p-4 bg-green-50 border-l-4 border-green-500 rounded-lg flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
@@ -498,16 +498,16 @@ export default function Portfolio() {
                   </div>
                 </div>
               )}
-              
-              <button 
-                type="submit" 
+
+              <button
+                type="submit"
                 disabled={formStatus === 'sending'}
                 className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
                 <Send className="w-5 h-5" />
                 {formStatus === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
-              
+
               <p className="text-sm text-gray-600 text-center">
                 Or email me directly at <a href="mailto:ashish2722001@gmail.com" className="text-blue-600 hover:underline font-medium">ashish2722001@gmail.com</a>
               </p>
