@@ -381,7 +381,6 @@ export default function Portfolio() {
               { degree: 'Master of Computer Applications (MCA)', institution: 'Swami Ramanand Teerth Marathwada University, Nanded', year: '2025' },
               { degree: 'Bachelor of Computer Applications (BCA)', institution: 'Sant Gadge Baba Amravati University, Amravati', year: '2022' },
               { degree: 'Full Stack Web Developer', institution: 'NareshIT Hyderabad', year: '2023', isCertification: true },
-              { degree: 'Higher Secondary Certificate (XII)', institution: 'Gopikabai Sitaram Gawande College, Umarkhed', year: '2019' }
             ].map((edu, idx) => (
               <div key={idx} className="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-blue-600 hover:shadow-2xl transition-all transform hover:-translate-y-1">
                 <div className={`inline-flex p-3 rounded-xl ${edu.isCertification ? 'bg-gradient-to-br from-green-500 to-emerald-500' : 'bg-gradient-to-br from-blue-600 to-purple-600'} text-white mb-4`}>
